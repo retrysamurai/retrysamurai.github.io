@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+  /* font-family: "Montserrat", sans-serif; */
+  scroll-behavior: smooth;
+  font-size: 1.06em;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: bisque;
+  margin: 10px;
+  display: block;
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  height: 100%;
+  width: 100vw;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #9fd2f0;
+  width: 100%;
+}
+
+.first,
+.second {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: bisque;
+}
+
+.first {
+  height: 700px;
+  background-image: url("https://wallpapercave.com/wp/wp7492031.jpg");
+  background-size: cover;
+}
+
+.author {
+  padding: 20px;
+  font-size: 3em;
+  background-color: bisque;
+  color: black;
+  font-weight: bold;
+  transform: skewX(-10deg);
+}
+
+#quote {
+  text-align: center;
+  width: 250px;
+  text-shadow: 0 0 10px white;
+}
+
+.first img {
+  margin: 20px;
+  margin-top: 0;
+  width: 350px;
+}
+
+.second > div {
+  display: flex;
+  flex-direction: column;
+  padding: 75px;
+  background-color: #3e89b4;
+  border-top: #2b739c solid 2px;
+  width: 100%;
+}
+
+.second > div a {
+  display: inline;
+  margin: 0;
+  color: black;
+  transition: 0.3s;
+}
+
+.second > div a:hover {
+  background-color: #2b739c;
+  color: bisque;
+}
+
+.navbar,
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2b739c;
+  width: 100%;
+}
+
+.navbar {
+  height: 100px;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.footer div {
+  width: 100%;
+}
+
+.footer .page-info {
+  padding: 80px;
+  width: 100%;
+}
+
+.footer .ext-links {
+  padding: 0 80px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.ext-links {
+  background-color: #235679;
+}
+
+.ext-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  width: 75px;
+}
+
+.footer img {
+  width: 100%;
+}
+
+.heading {
+  font-weight: bold;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  margin: 0 0 50px;
+}
+
+.links {
+  padding: 0 80px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.links a,
+.footer-links a {
+  margin: 0;
+}
+
+#go-top {
+  margin: 0;
+}
+
+li {
+  list-style: square inside;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.skills {
+  width: 100%;
+}
+
+.skill-bar {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  width: 1000px;
+  position: relative;
+}
+
+.skill-bar p {
+  margin-right: 40px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 50px;
+  width: 250px;
+  border-radius: 10px;
+  background-color: white;
+  color: #235679;
+}
+
+.skill-bar img {
+  width: 50px;
+  margin-right: 40px;
+}
+
+.skill-point {
+  background-color: #ffffff;
+  height: 20px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.skill-point::before {
+  content: "";
+  height: 20px;
+  border-radius: 10px 0 0 10px;
+  background-color: #235679;
+  position: absolute;
+  top: 15;
+}
+
+.skp-1::before {
+  width: 50%;
+}
+.skp-2::before {
+  width: 50%;
+}
+.skp-3::before {
+  width: 45%;
+}
+.skp-4::before {
+  width: 30%;
+}
+.skp-5::before {
+  width: 30%;
+}
+.skp-6::before {
+  width: 10%;
+}
+
+table,
+thead,
+tbody,
+tr,
+td {
+  font-family: "Inconsolata", monospace;
+  border: 2px solid #235679;
+}
+
+td {
+  padding: 10px;
+}
+
+thead td {
+  color: #235679;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* for contact page */
+.container-contact {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: #9fd2f0;
+  width: 100%;
+}
+
+.contact a {
+  margin: 0;
+  color: #235679;
+  display: inline;
+}
