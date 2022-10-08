@@ -78,7 +78,7 @@ a:hover {
   transform: skewX(-10deg);
 }
 
-#quote {
+.quote {
   text-align: center;
   width: 250px;
   text-shadow: 0 0 10px white;
